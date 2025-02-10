@@ -11,7 +11,7 @@ namespace WindowsFormsApp1
     /// <summary>
     /// SP_DEVICE_INTERFACE_DETAIL_DATA structure contains the path for a device interface.
     /// </summary>
-    [StructLayout(LayoutKind.Sequential, Pack = 2)]
+    [StructLayout(LayoutKind.Sequential)]// 移除 Pack = 2
     internal struct SP_DEVICE_INTERFACE_DETAIL_DATA
     {
       internal uint cbSize;
